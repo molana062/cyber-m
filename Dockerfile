@@ -1,8 +1,8 @@
 # Using Python Slim-Buster
 
-FROM irhamfadzillah/cyber:buster
+FROM molana062/cyber-m:buster
 
-RUN git clone -b master https://github.com/ythm00/Cyber /root/userbot
+RUN git clone -b master https://github.com/molana062/cyber-m /root/userbot
 RUN mkdir /root/userbot/.bin
 WORKDIR /root/userbot
 
