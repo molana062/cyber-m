@@ -36,6 +36,6 @@ if not BOTLOG_CHATID:
 
 
 
-LOGS.info("You are running Cyber Userbot")
+LOGS.info("You are running 404 Userbot")
 
 bot.run_until_disconnected()
