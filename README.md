@@ -34,7 +34,7 @@ based on [ProjectBish](https://github.com/adekmaulana/ProjectBish) Userbot
 ## Deploy
 ### Heroku
 Click this button below to Deploy to Heroku
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/ythm00/Cyber/tree/master"> <img src="https://www.herokucdn.com/deploy/button.png" alt="Deploy to Heroku"/></a></p>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/molana062/cyber-m/tree/master"> <img src="https://www.herokucdn.com/deploy/button.png" alt="Deploy to Heroku"/></a></p>
 
 Clone From [Cyber](https://github.com/ythm00/Cyber)
 ,Gunakan repo asli nya saja
