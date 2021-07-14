@@ -75,13 +75,13 @@ async def mention_afk(mention):
         if mention.sender_id not in USERS or chat_title not in USERS:
             if AFKREASON:
                 await mention.reply(
-                    f"**I'm not available right now.** (Since: {afk_str})"
+                    f"**Molana off.** (Since: {afk_str})"
                     f"\nReason: `{AFKREASON}`."
                 )
             else:
                 await mention.reply(
-                    f"**I'm not available right now.** (Since: {afk_str})"
-                    "\n**Please come back later.**"
+                    f"**Molana off.** (Since: {afk_str})"
+                    "\n**Nanti aja ya.**"
                 )
             if mention.sender_id is not None:
                 USERS.update({mention.sender_id: 1})
@@ -91,13 +91,13 @@ async def mention_afk(mention):
             if USERS[mention.sender_id] % randint(2, 4) == 0:
                 if AFKREASON:
                     await mention.reply(
-                        f"**I'm not available right now.** (Since: {afk_str})"
+                        f"**Molana off.** (Since: {afk_str})"
                         f"\nReason: `{AFKREASON}`."
                     )
                 else:
                     await mention.reply(
-                        f"**I'm not available right now.** (Since: {afk_str})"
-                        "\n**Please come back later.**"
+                        f"**Molana off.** (Since: {afk_str})"
+                        "\n**Nanti aja ya.**"
                     )
             if mention.sender_id is not None:
                 USERS[mention.sender_id] += 1
@@ -162,13 +162,13 @@ async def afk_on_pm(sender):
             if sender.sender_id not in USERS:
                 if AFKREASON:
                     await sender.reply(
-                        f"**I'm not available right now.** (Since: {afk_str})"
+                        f"**Molana off.** (Since: {afk_str})"
                         f"\nReason: `{AFKREASON}`."
                     )
                 else:
                     await sender.reply(
-                        f"**I'm not available right now.** (Since: {afk_str})"
-                        "\n**Please come back later.**"
+                        f"**Molana off.** (Since: {afk_str})"
+                        "\n**Nanti aja ya.**"
                     )
                 USERS.update({sender.sender_id: 1})
                 COUNT_MSG = COUNT_MSG + 1
@@ -176,13 +176,13 @@ async def afk_on_pm(sender):
                 if USERS[sender.sender_id] % randint(2, 4) == 0:
                     if AFKREASON:
                         await sender.reply(
-                            "**I'm not available right now.** (Since: {afk_str})"
+                            "**Molana off.** (Since: {afk_str})"
                             f"\nReason: `{AFKREASON}`."
                         )
                     else:
                         await sender.reply(
-                            "**I'm not available right now.** (Since: {afk_str})"
-                            "\n**Please come back later.**"
+                            "**Molana off.** (Since: {afk_str})"
+                            "\n**Nanti aja ya.**"
                         )
                     USERS[sender.sender_id] = USERS[sender.sender_id] + 1
                     COUNT_MSG = COUNT_MSG + 1
